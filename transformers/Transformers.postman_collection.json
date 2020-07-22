@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "758bd49d-c009-4d9d-977e-fbe903411f94",
+		"name": "Transformers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Transfotmer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"TF1\",\r\n    \"team\":\"DECEPTICON\",\r\n\t\"strength\":8 ,\r\n\t\"intelligence\":9 ,\r\n\t\"speed\":2 ,\r\n\t\"endurance\":6 ,\r\n\t\"rank\":7 ,\r\n    \"courage\":5 ,\r\n    \"firepower\":6 ,\r\n\t\"skill\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transformers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transformers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"fds\",\r\n    \"team\":\"AUTOBOT\",\r\n\t\"strength\":4 ,\r\n\t\"intelligence\":5 ,\r\n\t\"speed\":6 ,\r\n\t\"endurance\":7 ,\r\n\t\"rank\":8 ,\r\n    \"courage\":9 ,\r\n    \"firepower\":2 ,\r\n\t\"skill\":1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transformers/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transformers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"fds\",\r\n    \"team\":\"AUTOBOT\",\r\n\t\"strength\":0 ,\r\n\t\"intelligence\":0 ,\r\n\t\"speed\":0 ,\r\n\t\"endurance\":0 ,\r\n\t\"rank\":0 ,\r\n    \"courage\":0 ,\r\n    \"firepower\":0 ,\r\n\t\"skill\":0 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transformers/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transformers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liat all transformer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/transformers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transformers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  1,2\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transformers/play",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transformers",
+						"play"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "59b07eda-7920-4b9d-a6e8-922fd233c752",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2291c0e1-922c-4481-97f7-13d04e9df05b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
